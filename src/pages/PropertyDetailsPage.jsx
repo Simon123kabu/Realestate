@@ -132,7 +132,7 @@ const PropertyDetailsPage = () => {
 
   return (
     <div className="min-h-screen bg-[#FAF9F6]">
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 mt-20">
         {/* Breadcrumb */}
         <nav className="text-sm text-gray-600 mb-6">
           <a href="/" className="hover:text-[#36454F]">

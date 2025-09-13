@@ -17,22 +17,7 @@ const FilterBar = ({ filters, onFilterChange, onSortChange, sortBy }) => {
           onChange={handleInputChange}
           className="px-3 py-2 rounded border"
         />
-        <input
-          type="number"
-          name="minPrice"
-          placeholder="Min Price"
-          value={filters.minPrice}
-          onChange={handleInputChange}
-          className="px-3 py-2 rounded border"
-        />
-        <input
-          type="number"
-          name="maxPrice"
-          placeholder="Max Price"
-          value={filters.maxPrice}
-          onChange={handleInputChange}
-          className="px-3 py-2 rounded border"
-        />
+  {/* Min Price and Max Price fields removed */}
         <select
           name="beds"
           value={filters.beds}
@@ -90,7 +75,7 @@ const FilterBar = ({ filters, onFilterChange, onSortChange, sortBy }) => {
         </select>
       </div>
       <button
-        onClick={() => onFilterChange({ location: '', minPrice: '', maxPrice: '', beds: '', baths: '', propertyType: '' })}
+        onClick={() => onFilterChange({ location: '', beds: '', baths: '', propertyType: '' })}
         className="mt-4 w-full bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300"
       >
         Clear Filters
